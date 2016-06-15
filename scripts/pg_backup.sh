@@ -15,7 +15,7 @@ declare -x -r PITR_BIN='/opt/omnipitr/bin'
 declare -x -r PITR_DIR='/data/omnipitr'
 declare -x -r PGBIN='/opt/pgsql/bin'
 
-# the directory for the example is $path/postgresql/{data,backup,backup_remote,xlog_archive,scripts}
+# the directory for the example is $path/postgresql/{data,backup,rbackup,arclog,scripts}
 # current script in $path/postgresql/scripts
 declare -x -r PGDATA="$PROGDIR/../data"
 declare -x -r XLOG_ARCHIVE="$PROGDIR/../arclog"
@@ -29,7 +29,7 @@ declare -x -r MASTER_PORT='5432'
 declare -x -r PGPASSWORD=''
 
 # error mail
-declare -x -r ERROR_MAIL='sqldba@zhaopin.com.cn'
+declare -x -r ERROR_MAIL=''
 
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
 
